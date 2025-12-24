@@ -19,6 +19,28 @@ pip install -r requirements.txt
 pip install -r requirements-gpu.txt
 ```
 
+## 常见问题
+
+### Anaconda 环境运行报错
+
+如果使用 Anaconda 环境运行时遇到以下错误：
+
+```
+ImportError: libstdc++.so.6: version `GLIBCXX_3.4.32' not found
+```
+
+这是因为 Anaconda 自带的 libstdc++ 版本较旧。解决方法是在运行时使用系统的 libstdc++：
+
+```bash
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 python cli.py 图片1.jpg 图片2.jpg
+```
+
+或者将以下内容添加到 `~/.bashrc` 使其永久生效：
+
+```bash
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+```
+
 ## 使用方法
 
 ### 基本用法
