@@ -1,0 +1,17 @@
+# FaceFit 依赖文件
+# 人脸匹配度识别项目
+
+# 核心依赖
+numpy>=1.21.0
+opencv-python>=4.5.0
+
+# InsightFace - 人脸检测和识别
+insightface>=0.7.0
+
+# ONNX Runtime - 模型推理
+# CPU版本（必装）
+onnxruntime>=1.12.0
+
+# GPU版本（可选，需要CUDA环境）
+# 如果有NVIDIA GPU，取消下面这行的注释
+# onnxruntime-gpu>=1.12.0

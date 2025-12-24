@@ -1,0 +1,6 @@
+# Claude Code 相关文件
+.claude/
+ChangeLog/
+CLAUDE.md
+.claude.toml
+.claudeignore

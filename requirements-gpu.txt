@@ -1,0 +1,5 @@
+# GPU加速支持（可选）
+# 如果你有NVIDIA GPU并已安装CUDA，可以安装此文件获得更好性能
+
+# 替换CPU版本的ONNX Runtime
+onnxruntime-gpu>=1.12.0
